@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
-          path: likec4/packages/diagrams
+          path: ${{ github.workspace }}/packages/diagrams
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
